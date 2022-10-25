@@ -18,7 +18,8 @@
     --white: #FFFFFF;
 
     /* Font family */
-    --primary-font-family: 'AvantGarde', sans-serif;
+    --primary-font-family: 'Nunito', sans-serif;
+    --secondary-font-family: 'AvantGarde', sans-serif;
 
     /* Font size - Heading */
     --fs-h1: 60px;
@@ -486,6 +487,7 @@ img {
 }
 
 .welcomeSwiper .welcome-text h1 {
+    font-family: var(--secondary-font-family);
     position: relative;
     font-weight: var(--fw-bold);
     margin-bottom: 12px;
@@ -499,6 +501,10 @@ img {
     height: 3px;
     width: 215px;
     background: var(--corporate-yellow-500);
+}
+
+.welcomeSwiper .welcome-text h2 {
+    font-family: var(--secondary-font-family);
 }
 
 .welcomeSwiper .welcome-text .btn-general {
@@ -595,6 +601,11 @@ img {
     background: url('../images/background/servis-section-cover.jpg') no-repeat center;
     background-position: center;
     position: relative;
+}
+
+.detals .container {
+    position: relative;
+    z-index: 1;
 }
 
 .detals-content {
