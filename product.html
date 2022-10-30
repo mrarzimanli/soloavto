@@ -28,7 +28,7 @@
                     <img src="images/logo-dark.svg" alt="Solo Avto">
                 </a>
                 <nav class="header-menu">
-                    <ul>
+                    <ul class="menu-list">
                         <li>
                             <a href="about.html">Haqqımızda</a>
                         </li>
@@ -48,60 +48,94 @@
                             </a>
                         </li>
                     </ul>
+                    <ul class="lang-list">
+                        <li>
+                            <button><span>AZ</span><i class="fas fa-chevron-down"></i></button>
+                        </li>
+                        <ul class="lang-dropdown">
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">RU</a>
+                            </li>
+                        </ul>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main id="about">
-        <section class="about content-box-lg">
+    <main id="product">
+        <section class="product content-box-lg">
             <div class="container">
-                <div class="page-header">
-                    <h2 class="page-title">Haqqımızda</h2>
-                    <p>Avtomobiliniz üçün professional təmir və keyfiyyətli ehtiyat hissələrinin yeni ünvanı</p>
+                <div class="page-header breadcrumbs">
+                    <h2 class="page-title"><a href="blogs.html">Ehtiyat hissələri</a> <i class="fa-solid fa-angle-right"></i>"Kia Sportage" üçün hava filteri</h2>
+                    <p>Yaponiya və Koreya istehsalı avtomobillər üçün ehtiyat hissələri</p>
                 </div>
-                <div class="about-content content-box-lg">
-                    <div class="row g-5">
-                        <div class="col-lg-6">
-                            <div class="about-text">
-                                <div class="inner-section-header">
-                                    <h3 class="section-title">Biz kimik?</h3>
+                <div class="products-search">
+                    <form action="" id="productsSearch">
+                        <div class="products-search-group">
+                            <input type="text" placeholder="Məhsul adı" required>
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Axtar</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="product-content content-box-lg">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="product-gallery">
+                                <div class="swiper productGallerySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="images/products/about-1.png" class="product-gallery-item" data-fancybox="gallery" data-caption="Servisə qəbul">
+                                                <img src="images/products/about-1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="images/products/about-1.png" class="product-gallery-item" data-fancybox="gallery" data-caption="Servisə qəbul">
+                                                <img src="images/products/about-1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="images/products/about-1.png" class="product-gallery-item" data-fancybox="gallery" data-caption="Servisə qəbul">
+                                                <img src="images/products/about-1.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
-                                <div class="content"> "SOLO AVTO" avtomobiliniz üçün professional təmir xidməti təklif edən müasir servis mərkəzidir. Mərkəzimizdə hal-hazırda Yaponiya və Koreya istehsalı, yaxın gələcəkdə isə digər brendlər üzrə avtomobilllərin servisi və ehtiyat hissələrinin satışı nəzərdə tutulur. Servisin ən böyük üstünlüklərindən biri Koreya və Yaponiya istehsalı avtomobillər üçün avtoservislə yanaşı olaraq ehtiyat hissələrinin satışının da həyata keçirməsidir. “SOLO AVTO” servis sizə avtomobilinizdə yaranan nasazlıqları peşəkarcasına və ən qısa zamanda aradan qaldırmaq üçün fürsət yaradır. Avtomobil təmiri mərkəzimizdə müasir avadanlıqlardan istifadə avtomobilin daxili sistemlərində olan problemi təyin edərək həll etməyə imkan verir. Peşəkar və sərfəli maşın təmiri üçün saytımızda qeyd olunan nömrə ilə “SOLO AVTO” avtomobil təmiri mərkəzinə zəng edə və yaxud WhatsApp vasitəsilə yaza bilərsiniz. </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="about-image">
-                                <img src="images/about/about-1.png" alt="about-1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-lg-6">
-                            <div class="about-text">
-                                <div class="inner-section-header">
-                                    <h3 class="section-title">Biz kimik?</h3>
+                        <div class="col-lg-7">
+                            <div class="product-text">
+                                <h2 class="product-name">"Kia Sportage" üçün hava filteri</h2>
+                                <div class="price-share">
+                                    <span class="price">Qiyməti: 9 AZN</span>
+                                    <div class="share">
+                                        <button><i class="fa-solid fa-share"></i><span>Paylaş</span></button>
+                                        <div>
+                                            <div class="share-dropdown">
+                                                <a data-href="product.html" class="copy-to-clipboard">
+                                                    <i class="fa-regular fa-copy"></i>
+                                                    <span>Copied</span>
+                                                </a>
+                                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="content"> "SOLO AVTO" avtomobiliniz üçün professional təmir xidməti təklif edən müasir servis mərkəzidir. Mərkəzimizdə hal-hazırda Yaponiya və Koreya istehsalı, yaxın gələcəkdə isə digər brendlər üzrə avtomobilllərin servisi və ehtiyat hissələrinin satışı nəzərdə tutulur. Servisin ən böyük üstünlüklərindən biri Koreya və Yaponiya istehsalı avtomobillər üçün avtoservislə yanaşı olaraq ehtiyat hissələrinin satışının da həyata keçirməsidir. “SOLO AVTO” servis sizə avtomobilinizdə yaranan nasazlıqları peşəkarcasına və ən qısa zamanda aradan qaldırmaq üçün fürsət yaradır. Avtomobil təmiri mərkəzimizdə müasir avadanlıqlardan istifadə avtomobilin daxili sistemlərində olan problemi təyin edərək həll etməyə imkan verir. Peşəkar və sərfəli maşın təmiri üçün saytımızda qeyd olunan nömrə ilə “SOLO AVTO” avtomobil təmiri mərkəzinə zəng edə və yaxud WhatsApp vasitəsilə yaza bilərsiniz. </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-image">
-                                <img src="images/about/about-1.png" alt="about-1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-lg-6">
-                            <div class="about-text">
-                                <div class="inner-section-header">
-                                    <h3 class="section-title">Biz kimik?</h3>
-                                </div>
-                                <div class="content"> "SOLO AVTO" avtomobiliniz üçün professional təmir xidməti təklif edən müasir servis mərkəzidir. Mərkəzimizdə hal-hazırda Yaponiya və Koreya istehsalı, yaxın gələcəkdə isə digər brendlər üzrə avtomobilllərin servisi və ehtiyat hissələrinin satışı nəzərdə tutulur. Servisin ən böyük üstünlüklərindən biri Koreya və Yaponiya istehsalı avtomobillər üçün avtoservislə yanaşı olaraq ehtiyat hissələrinin satışının da həyata keçirməsidir. “SOLO AVTO” servis sizə avtomobilinizdə yaranan nasazlıqları peşəkarcasına və ən qısa zamanda aradan qaldırmaq üçün fürsət yaradır. Avtomobil təmiri mərkəzimizdə müasir avadanlıqlardan istifadə avtomobilin daxili sistemlərində olan problemi təyin edərək həll etməyə imkan verir. Peşəkar və sərfəli maşın təmiri üçün saytımızda qeyd olunan nömrə ilə “SOLO AVTO” avtomobil təmiri mərkəzinə zəng edə və yaxud WhatsApp vasitəsilə yaza bilərsiniz. </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-image">
-                                <img src="images/about/about-1.png" alt="about-1">
+                                <div class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non sequi vel autem modi fugit illo ratione ipsam natus, nemo ipsa dolore molestias iste, officia odit vitae iusto similique praesentium. </div>
+                                <a href="#" class="btn-general primary large">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>Bizdən soruşun</span>
+                                </a>
                             </div>
                         </div>
                     </div>
