@@ -1403,14 +1403,9 @@ img {
 /* ==============================
         Products
 ============================== */
-#products .brands {
-    margin-top: 48px;
-}
-
 .products-search {
     max-width: 640px;
-    margin: 0 auto;
-    margin-top: 48px;
+    margin: 48px auto;
 }
 
 .products-search .products-search-group {
@@ -1548,6 +1543,7 @@ img {
 /* ==============================
         Product single
 ============================== */
+
 .productGallerySwiper {
     padding-bottom: 32px;
 }
