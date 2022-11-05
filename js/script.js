@@ -33,6 +33,7 @@ $(function () {
             $('.lang-dropdown').stop(true, false, true).removeClass('active');
         }
     });
+
     // Scroll top button
     $('#btn-scroll-top').click(function () {
         $("html, body").animate({ scrollTop: 0 }, 0);
@@ -52,6 +53,18 @@ $(function () {
         $('.lang-dropdown').stop(true, false, true).toggleClass('active');
     });
 
+    // Mobile menu
+    $(".btn-menu-toggle").click(function () {
+        if ($(".mobile-menu-content").hasClass("show")) {
+            $("body").removeClass("overflow-hidden")
+            $(".mobile-menu-content").removeClass("show")
+        } else {
+            $("body").addClass("overflow-hidden")
+            $(".mobile-menu-content").addClass("show")
+        }
+    })
+
+    // Accordion
     $('.accardion-item-header button').click(function () {
         const accordionBody = $(this).closest('.accardion-item').find('.accardion-item-body');
         $('.accardion-item-body.show').stop(true, false, true).slideUp(250);
@@ -79,8 +92,28 @@ $(function () {
 
     // Brands swiper
     const brandsSwiper = new Swiper(".brandsSwiper", {
-        slidesPerView: 7,
-        spaceBetween: 100,
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            576: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 60,
+            },
+            992: {
+                slidesPerView: 6,
+                spaceBetween: 80,
+            },
+            1200: {
+                slidesPerView: 7,
+                spaceBetween: 100,
+            }
+        },
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
@@ -90,8 +123,24 @@ $(function () {
 
     // Products swiper
     const productsSwiper = new Swiper(".productsSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 32,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 32,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 32,
+            }
+        },
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
@@ -105,8 +154,28 @@ $(function () {
 
     // Sub services swiper
     const subServicesSwiper = new Swiper(".subServicesSwiper", {
-        slidesPerView: 4,
-        spaceBetween: 100,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 80,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 100,
+            }
+        },
         autoplay: {
             pauseOnMouseEnter: false,
             disableOnInteraction: false,
@@ -116,8 +185,24 @@ $(function () {
 
     // Products swiper
     const serviceCenterSwiper = new Swiper(".serviceCenterSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 36,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 36,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 36,
+            }
+        },
         autoplay: {
             pauseOnMouseEnter: false,
             disableOnInteraction: false,
@@ -144,8 +229,28 @@ $(function () {
 
     // Blogs swiper
     const blogsSwiper = new Swiper(".blogsSwiper", {
-        slidesPerView: 3,
-        spaceBetween: 68,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 48,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 68,
+            }
+        },
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,

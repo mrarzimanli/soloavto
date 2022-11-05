@@ -1,0 +1,138 @@
+@media (max-width: 1399px) {
+
+    /* Services */
+    .services-content {
+        padding-right: 62px;
+    }
+
+    .service-card {
+        height: 376px;
+    }
+
+    .service-card:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    .service-card .service-icon {
+        top: 36px;
+        left: 36px;
+        width: 84px;
+        height: 84px;
+    }
+
+    .service-card .service-name {
+        left: 36px;
+    }
+
+    /* About */
+    .about-content .about-text {
+        padding-right: 48px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Services */
+    .services-content {
+        padding-right: 62px;
+    }
+
+    .service-card {
+        height: 318px;
+    }
+
+    .service-card:not(:last-child) {
+        margin-right: 32px;
+    }
+
+    .service-card .service-icon {
+        top: 32px;
+        left: 32px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .service-card .service-name {
+        left: 32px;
+    }
+
+    /* Footer */
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    /* About */
+    .about-content .about-text {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Header */
+    .header-menu>*:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    /* Footer */
+    .contact-block {
+        align-items: center;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    /* Product */
+    .product-content .row{
+        flex-direction: column-reverse;
+    }
+
+    .product-text {
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 575px) {
+
+    /* Basics */
+    .section-header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-header::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Services */
+    .services-content {
+        padding-right: 0;
+    }
+
+    .services-content .arrow-down {
+        display: none;
+    }
+
+    .service-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .service-card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    /* Faq */
+    .accardion-item-header>button span {
+        display: none;
+    }
+}
