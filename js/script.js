@@ -77,6 +77,8 @@ $(function () {
     // Welcome swiper
     const welcomeSwiper = new Swiper(".welcomeSwiper", {
         spaceBetween: 0,
+        // rewind: true,
+        loop: true,
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
@@ -116,6 +118,8 @@ $(function () {
                 spaceBetween: 100,
             }
         },
+        // rewind: true,
+        loop: true,
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
@@ -125,6 +129,8 @@ $(function () {
 
     // Products swiper
     const productsSwiper = new Swiper(".productsSwiper", {
+        // rewind: true,
+        loop: true,
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -156,6 +162,8 @@ $(function () {
 
     // Sub services swiper
     const subServicesSwiper = new Swiper(".subServicesSwiper", {
+        // rewind: true,
+        loop: true,
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -185,8 +193,10 @@ $(function () {
         },
     });
 
-    // Products swiper
+    // Services center swiper
     const serviceCenterSwiper = new Swiper(".serviceCenterSwiper", {
+        // rewind: true,
+        loop: true,
         breakpoints: {
             0: {
                 slidesPerView: 1,
@@ -253,6 +263,8 @@ $(function () {
                 spaceBetween: 68,
             }
         },
+        // rewind: true,
+        loop: true,
         autoplay: {
             pauseOnMouseEnter: true,
             disableOnInteraction: false,

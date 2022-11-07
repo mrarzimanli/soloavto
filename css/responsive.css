@@ -117,9 +117,6 @@
     }
 
     /* Product */
-    .product-content .row {
-        flex-direction: column-reverse;
-    }
 
     .product-text {
         padding: 0;
