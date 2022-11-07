@@ -42,9 +42,11 @@ $(function () {
     // Go to
     $('.go-to').click(function (e) {
         e.preventDefault()
-        let fixedHeight = $('#header').outerHeight();
-        let id = $(this).attr("href");
-        $("html, body").animate({ scrollTop: $(id).offset().top - fixedHeight }, 0);
+        $("body").removeClass("overflow-hidden")
+        $(".mobile-menu-content").removeClass("show")
+        let fixedHeight = $('#header').outerHeight()
+        let id = $(this).attr("href")
+        $("html, body").animate({ scrollTop: $(id).offset().top - fixedHeight }, 0)
     });
 
     // Lang list
