@@ -95,7 +95,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 20,
             },
             576: {
                 slidesPerView: 3,
@@ -126,7 +126,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 24,
             },
             768: {
                 slidesPerView: 2,
@@ -157,7 +157,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 20,
             },
             576: {
                 slidesPerView: 2,
@@ -188,7 +188,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 24,
             },
             768: {
                 slidesPerView: 2,
@@ -232,7 +232,7 @@ $(function () {
         breakpoints: {
             0: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 24,
             },
             768: {
                 slidesPerView: 2,
