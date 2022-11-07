@@ -188,7 +188,7 @@
     /* Blog */
     .blog-item {
         width: 100%;
-        max-width: 360px;
+        max-width: 320px;
         margin: 0 auto;
     }
 
@@ -263,6 +263,10 @@
     .content-box-sm {
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+
+    .preloader img {
+        width: 120px;
     }
 
     /* Header */
@@ -373,6 +377,10 @@
 
     .blog-video {
         margin-top: 54px;
+    }
+
+    .blog-item:hover {
+        transform: none;
     }
 
     /* Faq */
