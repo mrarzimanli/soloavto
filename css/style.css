@@ -1146,7 +1146,6 @@ img {
     justify-content: center;
     font-size: var(--fs-b3);
     line-height: var(--lh-b3);
-    font-weight: var(--fw-bold);
     color: var(--white);
 }
 
