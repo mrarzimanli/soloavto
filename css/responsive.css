@@ -28,13 +28,22 @@
     .about-content .about-text {
         padding-right: 48px;
     }
+
+    /* Product */
+    .product-gallery-item {
+        height: 360px;
+    }
+
+    .product-text {
+        padding-left: 24px;
+    }
 }
 
 @media (max-width: 1200px) {
 
     /* Services */
     .services-content {
-        padding-right: 62px;
+        padding-right: 48px;
     }
 
     .service-card {
@@ -70,6 +79,15 @@
     .about-content .about-text {
         padding: 0 !important;
     }
+
+    /* Product */
+    .product-gallery-item {
+        height: 300px;
+    }
+
+    .product-text {
+        padding-left: 12px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -77,6 +95,18 @@
     /* Header */
     .header-menu>*:not(:last-child) {
         margin-right: 16px;
+    }
+
+    /* Services */
+    .services-content {
+        padding-right: 0;
+    }
+
+    /* Sub Services */
+    .sub-service-card img {
+        width: 60px;
+        height: 60px;
+        margin-right: 12px;
     }
 
     /* Footer */
@@ -87,20 +117,104 @@
     }
 
     /* Product */
-    .product-content .row{
+    .product-content .row {
         flex-direction: column-reverse;
     }
 
     .product-text {
         padding: 0;
     }
+
+    .product-text .product-name {
+        margin-bottom: 32px;
+    }
+
+    .product-text .price-share {
+        margin-bottom: 24px;
+    }
+
+    .product-text .btn-general {
+        margin-top: 32px;
+    }
+
+    .product-gallery-item {
+        height: 556px;
+    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    /* ==============================
+        1. Globals
+============================== */
+    :root {
+        /* Font size - Heading */
+        --fs-h1: 48px;
+        --fs-h2: 30px;
+        --fs-h3: 24px;
+
+        /* Line height - Heading */
+        --lh-h1: 60px;
+        --lh-h2: 38px;
+        --lh-h3: 32px;
+
+        /* Font size - Basic */
+        --fs-b1: 14px;
+        --fs-b2: 16px;
+        --fs-b3: 16px;
+
+        /* Line height - Basic */
+        --lh-b1: 20px;
+        --lh-b2: 24px;
+        --lh-b3: 24px;
+    }
+
+    /* Services */
+    .service-card {
+        height: 304px;
+    }
+
+    .service-card .service-icon {
+        top: 28px;
+        left: 28px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-card .service-name {
+        left: 28px;
+    }
+
+    /* Blog */
+    .blog-item {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .blog-video {
+        height: 320px;
+    }
+
+    /* Product */
+    .product-card {
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .product-gallery-item {
+        height: 412px;
+    }
+}
 
 @media (max-width: 575px) {
 
     /* Basics */
+    body {
+        padding-top: 68px;
+    }
+
     .section-header {
         align-items: center;
         text-align: center;
@@ -109,6 +223,59 @@
     .section-header::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 20px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        width: 12px;
+    }
+
+    #btn-scroll-top {
+        bottom: 16px;
+        right: 16px;
+        width: 38px;
+        height: 38px;
+    }
+
+    .btn-general {
+        font-size: var(--fs-b3);
+        line-height: var(--lh-b3);
+    }
+
+    .btn-general.large {
+        padding: 12px 20px;
+        height: 48px;
+    }
+
+    .content-box-lg {
+        padding-top: 54px;
+        padding-bottom: 54px;
+    }
+
+    .content-box-md {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .content-box-sm {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header-content, .mobile-menu-header {
+        padding: 10px 0;
+    }
+
+    .header-logo img, .mobile-header-logo img {
+        height: 48px;
+    }
+
+    .mobile-menu-footer .social-list {
+        justify-content: center;
     }
 
     /* Services */
@@ -129,6 +296,106 @@
     .service-card:not(:last-child) {
         margin-right: 0;
         margin-bottom: 32px;
+    }
+
+    .service-card {
+        max-width: 300px;
+        width: 100%;
+        height: 438px;
+    }
+
+    .service-card .service-icon {
+        top: 32px;
+        left: 32px;
+        width: 76px;
+        height: 76px;
+    }
+
+    /* Detals */
+    .detals-image img {
+        max-width: 350px;
+    }
+
+    /* Products */
+    .products-content-header {
+        flex-direction: column;
+    }
+
+    .products-content-header span {
+        margin-bottom: 12px;
+    }
+
+    .products-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #home-page .product-card:hover {
+        transform: none;
+    }
+
+    #products .product-card:hover {
+        transform: none;
+    }
+
+    .products-search {
+        margin: 32px 0;
+    }
+
+    /* Product */
+    .product-gallery-item {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+        height: 280px;
+    }
+
+    /* Service center */
+    .service-center-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .service-center-card {
+        height: 280px;
+    }
+
+    /* Blog */
+    .blog-video {
+        height: 280px;
+    }
+
+    .blog-video {
+        margin-top: 54px;
+    }
+
+    /* Faq */
+    .accardion-item-header>span {
+        padding: 4px 20px;
+    }
+
+    .accardion-item-body-content {
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer-logo img {
+        height: 72px;
+    }
+
+    .footer-secondary {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-secondary .social-list {
+        margin-top: 16px;
     }
 
     /* Faq */

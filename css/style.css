@@ -75,18 +75,6 @@
         2. Basics
 ============================== */
 
-@font-face {
-    font-family: var(--primary-font-family);
-    src: url('../fonts/AvantGarde.otf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: var(--primary-font-family);
-    src: url('../fonts/AvantGardeB.otf');
-    font-weight: bold;
-}
-
 html {
     scrollbar-color: var(--corporate-yellow-500) var(--corporate-dark-gray-500);
     scrollbar-width: thin;
@@ -838,10 +826,6 @@ img {
     background: var(--corporate-yellow-500);
 }
 
-.welcomeSwiper .welcome-text h1, .welcomeSwiper .welcome-text h2 {
-    /* font-family: var(--secondary-font-family); */
-}
-
 .welcomeSwiper .welcome-text .btn-general {
     margin-top: 42px;
 }
@@ -854,6 +838,7 @@ img {
 
 .welcomeSwiper .welcome-img img {
     width: 100%;
+    max-width: 650px;
     height: auto;
 }
 
@@ -963,6 +948,7 @@ img {
 
 .detals-image img {
     width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
@@ -1061,9 +1047,6 @@ img {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 300px;
-    margin: 0 auto;
-    width: 100%;
     border-radius: var(--br-12);
     box-shadow: var(--box-shadow-xl);
     overflow: hidden;
@@ -1133,7 +1116,6 @@ img {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 100px 0;
 }
 
 .avto-service-image {
@@ -1145,6 +1127,7 @@ img {
 
 .avto-service-image img {
     width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
@@ -1154,7 +1137,6 @@ img {
 
 .sub-services {
     background: var(--corporate-dark-gray-500);
-    padding: 44px 0;
     border-top: 4px solid var(--corporate-yellow-500);
 }
 
@@ -1248,8 +1230,8 @@ img {
     margin-bottom: 24px;
 }
 
-.header-logo img {
-    height: 56px;
+.footer-logo img {
+    height: 92px;
     width: auto;
 }
 
@@ -1393,7 +1375,7 @@ img {
         Blogs
 ============================== */
 .blogs-content {
-    max-width: 1240px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -1401,9 +1383,6 @@ img {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 360px;
-    margin: 0 auto;
-    width: 100%;
     background-color: var(--white);
     border-radius: var(--br-12);
     box-shadow: var(--box-shadow-xl);
