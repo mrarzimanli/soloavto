@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="overflow-hidden">
-    <!-- Preloader -->
-    <div class="preloader">
-        <img src="images/prelader.svg" alt="">
-    </div>
+<body>
     <!-- Scroll to top button -->
     <button id="btn-scroll-top"><i class="fa-solid fa-arrow-up"></i> </button>
     <header class="header" id="header">
@@ -148,7 +144,7 @@
                 </div>
                 <div class="product-content content-box-md">
                     <div class="row gy-5">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 d-flex">
                             <div class="product-gallery">
                                 <div class="swiper productGallerySwiper">
                                     <div class="swiper-wrapper">
@@ -174,33 +170,138 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 d-flex">
                             <div class="product-text">
-                                <h2 class="product-name">"Kia Sportage" üçün hava filteri</h2>
-                                <div class="price-share">
-                                    <span class="price">Qiyməti: 9 AZN</span>
-                                    <div class="share">
-                                        <button><i class="fa-solid fa-share"></i><span>Paylaş</span></button>
-                                        <div>
-                                            <div class="share-dropdown">
-                                                <span data-href="product.html" class="copy-to-clipboard">
-                                                    <i class="fa-regular fa-copy"></i>
-                                                    <span>Copied</span>
-                                                </span>
-                                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <div class="product-text-header">
+                                    <h2 class="product-name">"Kia Sportage" üçün hava filteri</h2>
+                                    <div class="price-share">
+                                        <span class="price">Qiyməti: 9 AZN</span>
+                                        <div class="share">
+                                            <button><i class="fa-solid fa-share"></i><span>Paylaş</span></button>
+                                            <div>
+                                                <div class="share-dropdown">
+                                                    <span data-href="product.html" class="copy-to-clipboard">
+                                                        <i class="fa-regular fa-copy"></i>
+                                                        <span>Copied</span>
+                                                    </span>
+                                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non sequi vel autem modi fugit illo ratione ipsam natus, nemo ipsa dolore molestias iste, officia odit vitae iusto similique praesentium. </div>
-                                <a href="#" class="btn-general primary large">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    <span>Bizdən soruşun</span>
-                                </a>
+                                <div class="product-text-body">
+                                    <div class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non sequi vel autem modi fugit illo ratione ipsam natus, nemo ipsa dolore molestias iste, officia odit vitae iusto similique praesentium. </div>
+                                </div>
+                                <div class="product-text-footer">
+                                    <a href="#" class="btn-general primary large">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span>Bizdən soruşun</span>
+                                    </a>
+                                    <div class="view-count">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.42012 12.7132C2.28394 12.4975 2.21584 12.3897 2.17772 12.2234C2.14909 12.0985 2.14909 11.9015 2.17772 11.7766C2.21584 11.6103 2.28394 11.5025 2.42012 11.2868C3.54553 9.50484 6.8954 5 12.0004 5C17.1054 5 20.4553 9.50484 21.5807 11.2868C21.7169 11.5025 21.785 11.6103 21.8231 11.7766C21.8517 11.9015 21.8517 12.0985 21.8231 12.2234C21.785 12.3897 21.7169 12.4975 21.5807 12.7132C20.4553 14.4952 17.1054 19 12.0004 19C6.8954 19 3.54553 14.4952 2.42012 12.7132Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M12.0004 15C13.6573 15 15.0004 13.6569 15.0004 12C15.0004 10.3431 13.6573 9 12.0004 9C10.3435 9 9.0004 10.3431 9.0004 12C9.0004 13.6569 10.3435 15 12.0004 15Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <span>128</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-products content-box-lg pt-0">
+            <div class="container">
+                <div class="related-products-content">
+                    <div class="page-header">
+                        <h2 class="page-title">Əlaqəli məhsullar</h2>
+                    </div>
+                    <div class="products-content">
+                        <div class="swiper productsSwiper content-box-sm">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="product.html" class="product-card-header">
+                                            <img src="images/products/product-1.png" alt="product-1">
+                                        </a>
+                                        <div class="product-card-body">
+                                            <span class="product-name">Məhsulun tam adı</span>
+                                            <span class="product-price">9 AZN</span>
+                                            <a href="#" class="btn-general secondary small">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <span>Məlumat al</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="product.html" class="product-card-header">
+                                            <img src="images/products/product-1.png" alt="product-1">
+                                        </a>
+                                        <div class="product-card-body">
+                                            <span class="product-name">Məhsulun tam adı uzun da ola bilər.</span>
+                                            <span class="product-price">9 AZN</span>
+                                            <a href="#" class="btn-general secondary small">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <span>Məlumat al</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="product.html" class="product-card-header">
+                                            <img src="images/products/product-1.png" alt="product-1">
+                                        </a>
+                                        <div class="product-card-body">
+                                            <span class="product-name">Məhsulun tam adı</span>
+                                            <span class="product-price">9 AZN</span>
+                                            <a href="#" class="btn-general secondary small">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <span>Məlumat al</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="product.html" class="product-card-header">
+                                            <img src="images/products/product-1.png" alt="product-1">
+                                        </a>
+                                        <div class="product-card-body">
+                                            <span class="product-name">Məhsulun tam adı</span>
+                                            <span class="product-price">9 AZN</span>
+                                            <a href="#" class="btn-general secondary small">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <span>Məlumat al</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="product.html" class="product-card-header">
+                                            <img src="images/products/product-1.png" alt="product-1">
+                                        </a>
+                                        <div class="product-card-body">
+                                            <span class="product-name">Məhsulun tam adı</span>
+                                            <span class="product-price">9 AZN</span>
+                                            <a href="#" class="btn-general secondary small">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <span>Məlumat al</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>

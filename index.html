@@ -9,25 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body class="overflow-hidden">
-    <!-- Preloader -->
-    <div class="preloader">
-        <img src="images/prelader.svg" alt="preloader">
-    </div>
+<body>
     <!-- Scroll to top button -->
-    <button id="btn-scroll-top"><i class="fa-solid fa-arrow-up"></i> </button>
+    <button id="btn-scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
     <header class="header" id="header">
         <div class="container">
             <div class="header-content">
                 <a href="index.html" class="header-logo">
-                    <img src="images/logo-dark.svg" width="87" height="56" alt="Solo Avto">
+                    <img class="lazyload" data-src="images/logo-dark.svg" width="87" height="56" alt="Solo Avto">
                 </a>
                 <nav class="header-menu">
                     <ul class="menu-list d-none d-lg-flex">
@@ -47,7 +43,17 @@
                             <a href="#contact" class="go-to">Əlaqə</a>
                         </li>
                         <li>
-                            <i class="fa-brands fa-youtube"></i>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1027_1533)">
+                                    <path d="M23.5216 6.18547C23.3859 5.67489 23.1185 5.20889 22.7462 4.83413C22.3738 4.45936 21.9095 4.18897 21.3998 4.05002C19.5234 3.54547 12.0234 3.54547 12.0234 3.54547C12.0234 3.54547 4.52344 3.54547 2.64707 4.05002C2.13737 4.18897 1.6731 4.45936 1.30073 4.83413C0.928354 5.20889 0.660943 5.67489 0.525256 6.18547C0.0234376 8.07002 0.0234375 12 0.0234375 12C0.0234375 12 0.0234376 15.93 0.525256 17.8146C0.660943 18.3251 0.928354 18.7911 1.30073 19.1659C1.6731 19.5407 2.13737 19.8111 2.64707 19.95C4.52344 20.4546 12.0234 20.4546 12.0234 20.4546C12.0234 20.4546 19.5234 20.4546 21.3998 19.95C21.9095 19.8111 22.3738 19.5407 22.7462 19.1659C23.1185 18.7911 23.3859 18.3251 23.5216 17.8146C24.0234 15.93 24.0234 12 24.0234 12C24.0234 12 24.0234 8.07002 23.5216 6.18547Z" fill="#FF0302" />
+                                    <path d="M9.56934 15.5687V8.4314L15.8421 12L9.56934 15.5687Z" fill="#FEFEFE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1027_1533">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
                             <a href="https://youtube.com">
                                 <span>Bizi izlə</span>
                             </a>
@@ -148,7 +154,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="welcome-img">
-                                        <img src="images/home/welcome-1.svg" width="636" height="460"  alt="Servis Axtarırsan, yoxsa ehtiyat hissəsi?" />
+                                        <img src="images/home/welcome-1.svg" width="636" height="460" alt="Servis Axtarırsan, yoxsa ehtiyat hissəsi?" />
                                     </div>
                                 </div>
                             </div>
@@ -212,16 +218,16 @@
                     <div class="col-lg-7 d-flex">
                         <div class="service-cards-wrapper">
                             <a href="#detals" class="service-card go-to">
-                                <img src="images/services/ehtiyat-hissələri-cover.png" alt="ehtiyat hissələri">
+                                <img class="lazyload" data-src="images/services/ehtiyat-hissələri-cover.png" alt="ehtiyat hissələri">
                                 <div class="service-icon">
-                                    <img src="images/services/ehtiyat-hisseleri-icon.svg" alt="ehtiyat hisseleri">
+                                    <img class="lazyload" data-src="images/services/ehtiyat-hisseleri-icon.svg" alt="ehtiyat hisseleri">
                                 </div>
                                 <h2 class="service-name">Ehtiyat Hissələri</h2>
                             </a>
                             <a href="#avto-service" class="service-card go-to">
-                                <img src="images/services/avtoservis-cover.png" alt="ehtiyat hissələri">
+                                <img class="lazyload" data-src="images/services/avtoservis-cover.png" alt="ehtiyat hissələri">
                                 <div class="service-icon">
-                                    <img src="images/services/avtoservis-icon.svg" alt="ehtiyat hisseleri">
+                                    <img class="lazyload" data-src="images/services/avtoservis-icon.svg" alt="ehtiyat hisseleri">
                                 </div>
                                 <h2 class="service-name">Avtomobil Servisi</h2>
                             </a>
@@ -248,7 +254,7 @@
                     </div>
                     <div class="col-lg-6 d-flex">
                         <div class="detals-image">
-                            <img src="images/home/ehtiyat-hisseleri.png" width="600" height="490" alt="ehtiyat hisseleri">
+                            <img class="lazyload" data-src="images/home/ehtiyat-hisseleri.png" width="600" height="490" alt="ehtiyat hisseleri">
                         </div>
                     </div>
                 </div>
@@ -259,31 +265,40 @@
                 <div class="swiper brandsSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/brands/Toyota.svg" alt="Toyota">
+                            <img class="swiper-lazy" src="images/brands/Toyota.svg" alt="Toyota">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Infinity.svg" alt="Infinity">
+                            <img class="swiper-lazy" src="images/brands/Infinity.svg" alt="Infinity">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Nissan.svg" alt="Nissan">
+                            <img class="swiper-lazy" src="images/brands/Nissan.svg" alt="Nissan">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Mitshubishi.svg" alt="Mitshubishi">
+                            <img class="swiper-lazy" src="images/brands/Mitshubishi.svg" alt="Mitshubishi">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Hyundai.svg" alt="Hyundai">
+                            <img class="swiper-lazy" src="images/brands/Hyundai.svg" alt="Hyundai">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/KİA.svg" alt="KİA">
+                            <img class="swiper-lazy" src="images/brands/KİA.svg" alt="KİA">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Union.svg" alt="Lexus">
+                            <img class="swiper-lazy" src="images/brands/Union.svg" alt="Lexus">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/KİA.svg" alt="KİA">
+                            <img class="swiper-lazy" src="images/brands/KİA.svg" alt="KİA">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/brands/Union.svg" alt="Lexus">
+                            <img class="swiper-lazy" src="images/brands/Union.svg" alt="Lexus">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
                 </div>
@@ -302,7 +317,8 @@
                             <div class="swiper-slide">
                                 <div class="product-card">
                                     <a href="product.html" class="product-card-header">
-                                        <img src="images/products/product-1.png" alt="product-1">
+                                        <div class="swiper-lazy-preloader"></div>
+                                        <img class="swiper-lazy" src="images/products/product-1.png" alt="product-1">
                                     </a>
                                     <div class="product-card-body">
                                         <span class="product-name">Məhsulun tam adı</span>
@@ -317,7 +333,8 @@
                             <div class="swiper-slide">
                                 <div class="product-card">
                                     <a href="product.html" class="product-card-header">
-                                        <img src="images/products/product-1.png" alt="product-1">
+                                        <div class="swiper-lazy-preloader"></div>
+                                        <img class="swiper-lazy" src="images/products/product-1.png" alt="product-1">
                                     </a>
                                     <div class="product-card-body">
                                         <span class="product-name">Məhsulun tam adı uzun da ola bilər.</span>
@@ -332,6 +349,23 @@
                             <div class="swiper-slide">
                                 <div class="product-card">
                                     <a href="product.html" class="product-card-header">
+                                        <div class="swiper-lazy-preloader"></div>
+                                        <img class="swiper-lazy" src="images/products/product-1.png" alt="product-1">
+                                    </a>
+                                    <div class="product-card-body">
+                                        <span class="product-name">Məhsulun tam adı</span>
+                                        <span class="product-price">9 AZN</span>
+                                        <a href="#" class="btn-general secondary small">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span>Məlumat al</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <a href="product.html" class="product-card-header">
+                                        <div cla class="swiper-lazy" ss="swiper-lazy-preloader"></div>
                                         <img src="images/products/product-1.png" alt="product-1">
                                     </a>
                                     <div class="product-card-body">
@@ -347,21 +381,7 @@
                             <div class="swiper-slide">
                                 <div class="product-card">
                                     <a href="product.html" class="product-card-header">
-                                        <img src="images/products/product-1.png" alt="product-1">
-                                    </a>
-                                    <div class="product-card-body">
-                                        <span class="product-name">Məhsulun tam adı</span>
-                                        <span class="product-price">9 AZN</span>
-                                        <a href="#" class="btn-general secondary small">
-                                            <i class="fa-brands fa-whatsapp"></i>
-                                            <span>Məlumat al</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <a href="product.html" class="product-card-header">
+                                        <div cla class="swiper-lazy" ss="swiper-lazy-preloader"></div>
                                         <img src="images/products/product-1.png" alt="product-1">
                                     </a>
                                     <div class="product-card-body">
@@ -411,37 +431,43 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/cilinger-isleri.svg" alt="cilinger isleri">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/cilinger-isleri.svg" alt="cilinger isleri">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/muherrik-isleri.svg" alt="muherrik isleri">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/muherrik-isleri.svg" alt="muherrik isleri">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/yagin-deyisdirilmesi.svg" alt="yagin deyisdirilmesi">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/yagin-deyisdirilmesi.svg" alt="yagin deyisdirilmesi">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/texniki-baxis.svg" alt="texniki baxis">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/texniki-baxis.svg" alt="texniki baxis">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/cilinger-isleri.svg" alt="cilinger isleri">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/cilinger-isleri.svg" alt="cilinger isleri">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sub-service-card">
-                                <img src="images/services/sub-services/muherrik-isleri.svg" alt="muherrik isleri">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="swiper-lazy" src="images/services/sub-services/muherrik-isleri.svg" alt="muherrik isleri">
                                 <span>Çilingər işləri</span>
                             </div>
                         </div>
@@ -457,42 +483,48 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
                             </div>
                             <div class="swiper-slide">
                                 <a href="images/service-center/1.png" class="service-center-card" data-fancybox="gallery" data-caption="Servisə qəbul">
-                                    <img src="images/service-center/1.png" alt="Servisə qəbul">
+                                    <div class="swiper-lazy-preloader"></div>
+                                    <img class="swiper-lazy" src="images/service-center/1.png" alt="Servisə qəbul">
                                     <span>Servisə qəbul</span>
                                     <div class="overlay yellow"></div>
                                 </a>
@@ -565,7 +597,7 @@
                     </div>
                     <div class="col-lg-4 col-xl-3">
                         <div class="contact-block">
-                            <iframe width="300" height="300" id="gmap_canvas" title="Solo Avto" src="https://maps.google.com/maps?q=baku&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <iframe class="lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.585433023398!2d49.81333771510624!3d40.39587987936759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030877e5850e3e3%3A0x47820f354efacbff!2sQrand%20H%C9%99yat!5e0!3m2!1sen!2s!4v1670265874525!5m2!1sen!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" itle="Solo Avto" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -574,7 +606,18 @@
                 <div> Copyright © Solo Avto | Bütün hüquqlar qorunur. </div>
                 <ul class="social-list">
                     <li>
-                        <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="facebook">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3339_101480)">
+                                    <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="#98A2B3" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3339_101480">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
                     </li>
                     <li>
                         <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -596,6 +639,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>
